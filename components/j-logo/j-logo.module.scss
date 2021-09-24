@@ -1,0 +1,20 @@
+.logo--front {
+  position: absolute;
+  transform: translateX(6px);
+  color: var(--logo-front-c);
+}
+
+.logo--back {
+  margin-right: 0px;
+  color: var(--logo-back-c);
+}
+
+.title--back {
+  color: var(--logo-back-c);
+}
+
+.title--front {
+  position: absolute;
+  color: var(--logo-front-c);
+  transform: translateX(-5.5rem);
+}

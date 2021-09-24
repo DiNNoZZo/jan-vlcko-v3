@@ -1,0 +1,19 @@
+.main__menu {
+  background-color: var(--nav-background-c);
+  color: var(--nav-text-c);
+  width: var(--width-nav);
+  height: 100vh;
+
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  position: fixed;
+  // flex-direction: column;
+  // justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: minmax(var(--width-nav), max-content);
+  grid-template-rows: repeat(3, 1fr);
+
+  align-content: space-between;
+}

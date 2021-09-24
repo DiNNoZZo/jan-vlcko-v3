@@ -1,0 +1,16 @@
+.page__content {
+  display: grid;
+  grid-template-columns: var(--width-nav) 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main__content {
+  background-color: var(--home-background-c);
+  color: var(--home-text-c);
+  width: 100%;
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  overflow: hidden;
+}

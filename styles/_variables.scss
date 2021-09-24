@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$font-encode: 'Encode Sans SC', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
+$c-primary: #ed3b3b;
+$c-secondary: #7af967;
+
+$c-blue-light: #31ceed;
+$c-yellow: #ffec05;
+$c-red: #f9000f;
+
+$c-black: hsl(0, 0%, 0%);
+$c-grey-52: hsl(0, 0%, 52%);
+$c-grey-34: hsl(0, 0%, 34%);
+$c-grey-24: hsl(0, 0%, 24%);
+$c-grey-15: hsl(0, 0%, 15%);
+$c-grey-12: hsl(0, 0%, 12%);
+$c-grey-9: hsl(0, 0%, 9%);
+$c-grey-light-transparent: hsla(0, 0%, 29%, 0.722);
+$c-grey-light-transparent-more: hsla(0, 0%, 29%, 0.322);
+$c-grey-light-transparent-hover: hsla(0, 0%, 50%, 0.322);
+$c-white: hsl(0, 0%, 100%);
+$c-white-80: hsl(0, 0%, 80%);
+$c-white-transparent: hsla(0, 0%, 100%, 0.267);
+
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;
+$items: 3;
+
+:root {
+  //colors
+  --primary-c: #{$c-primary};
+  --secondary-c: #{$c-secondary};
+  --select-c: #{$c-primary};
+  --white-c: #{$c-white};
+  --black-c: #{$c-black};
+  --red-c: #{$c-red};
+
+  --tags-c: #{$c-grey-34};
+
+  --sub-title-text-c: #{$c-grey-52};
+
+  --nav-background-c: #{$c-grey-9};
+  --nav-background-transparent-c: #{$c-grey-light-transparent};
+  --nav-text-c: #{$c-grey-52};
+  --nav-border-c: #{$c-grey-light-transparent-more};
+  --nav-mobile-menu-c: #{$c-white};
+  --nav-mobile-menu-bg: #{$c-grey-light-transparent-more};
+  --nav-mobile-menu-bg-hover: #{$c-grey-light-transparent-hover};
+  --nav-mobile-menu-btn-hover: #{$c-grey-34};
+
+  --logo-text-c: #{$c-white};
+  --logo-front-c: #{$c-primary};
+  --logo-back-c: #{$c-secondary};
+
+  --home-background-c: #{$c-grey-12};
+  --home-text-c: #{$c-white};
+
+  --form-background-c: #{$c-grey-15};
+  --form-text-c: #{$c-white-80};
+
+  --label-background-c: #{$c-secondary};
+  --label-background-warning-c: #{$c-primary};
+
+  --base-line-c: #{$c-grey-34};
+  --front-end-line-c: #{$c-blue-light};
+  --back-end-line-c: #{$c-yellow};
+  --react-line-c: #{$c-red};
+
+  --text-background-c: #{$c-grey-24};
+
+  --box-shadow-img: #{$c-white-transparent};
+
+  //grid
+  --width-nav: 13rem;
+}

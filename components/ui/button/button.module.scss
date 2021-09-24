@@ -1,0 +1,36 @@
+.btn {
+  font-family: 'Encode Sans SC', sans-serif;
+  align-self: baseline;
+  color: var(--primary-c);
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: 5px;
+  padding: 1.3rem 4rem;
+  border: 1.5px solid var(--primary-c);
+  background-color: transparent;
+  background-image: linear-gradient(
+    120deg,
+    var(--primary-c) 50%,
+    transparent 50%,
+    transparent 0
+  );
+  background-size: 219%;
+  background-position: 99%;
+  transition: color 0.3s, background-size 0.3s, background-position 0.3s,
+    transform 0.5s, opacity 0.5s;
+
+  &:hover {
+    color: var(--gray-dark);
+    background-position: 1%;
+  }
+}
+
+.link {
+  color: var(--secondary-c);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

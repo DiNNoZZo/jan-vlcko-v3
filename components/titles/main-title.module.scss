@@ -1,0 +1,15 @@
+.title {
+  &--primary {
+    position: relative;
+    font-size: 8.5rem;
+    line-height: 0.9;
+    margin-bottom: 3.5rem;
+  }
+
+  &-j {
+    display: inline;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11rem;
+  }
+}

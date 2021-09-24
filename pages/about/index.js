@@ -1,7 +1,5 @@
-import AboutMe from '../../components/aboutMe/aboutMe';
-
 function AboutPage() {
-  return <AboutMe />
+  return <p>Hi about me</p>;
 }
 
-export default AboutMe;
+export default AboutPage;
