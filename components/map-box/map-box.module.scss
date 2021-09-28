@@ -1,0 +1,23 @@
+.image {
+  // position: absolute;
+  // left: 50%;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+
+  // height: 100%;
+  // width: 100%;
+  &__container {
+    background-image: url('https://api.mapbox.com/styles/v1/johny012511/ckrb3aw49062d17nysxd0njqr/static/pin-l+7af967(19.146252302541438,48.73613737993931)/19.1081,48.7179,8,0/1000x1280@2x?access_token=pk.eyJ1Ijoiam9obnkwMTI1MTEiLCJhIjoiY2tyYjNubHkyMHViaDMycXU2NHZ1ZTNmayJ9.CLmnoiimlpLsjP9fy8B8UQ');
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    // height: 100%;
+    // width: 100%;
+  }
+}

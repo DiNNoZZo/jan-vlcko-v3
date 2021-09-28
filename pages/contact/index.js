@@ -1,5 +1,12 @@
+import ContactSection from '../../components/contact/contact-page';
+import Section from '../../components/ui/section/section';
+
 function ContactPage() {
-  return <h1>Ahoj moja Contact page</h1>
+  return (
+    <Section>
+      <ContactSection />
+    </Section>
+  );
 }
 
 export default ContactPage;

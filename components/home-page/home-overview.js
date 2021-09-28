@@ -1,21 +1,23 @@
 import React, { Fragment } from 'react';
-import Image from 'next/image';
 
+import ContactPage from '../contact/contact-page';
+
+import Text from '../ui/text';
 import Section from '../ui/section/section';
 import TextArea from '../ui/text-area/text-area';
+import Button from '../ui/button/button';
 import MainTitle from '../titles/main-title';
 import SecondTitle from '../titles/second-title';
 import Portfolio from '../portfolio/portfolio';
 import ProgLang from '../prog-lang/prog-lang';
-import Text from '../text';
-import Button from '../ui/button/button';
+
 import classes from './home-overview.module.scss';
 
 function HomeOverview() {
   return (
     <Fragment>
       <Section styles="full-screen">
-        <TextArea>
+        <TextArea styles={classes['title--area']}>
           <MainTitle />
           <p className={classes.title__desc}>
             Front End Developer / React / Next
@@ -38,7 +40,7 @@ function HomeOverview() {
       </Section>
       <Portfolio />
       <Section styles="grid-screen">
-        <TextArea styles="small-width">
+        <TextArea>
           <header>
             <SecondTitle title={'S čím pracujem'} />
           </header>
@@ -61,6 +63,9 @@ function HomeOverview() {
           </Text>
         </TextArea>
         <ProgLang />
+      </Section>
+      <Section styles="grid-screen">
+        <ContactPage />
       </Section>
     </Fragment>
   );

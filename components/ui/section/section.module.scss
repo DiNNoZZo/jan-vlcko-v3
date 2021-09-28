@@ -9,4 +9,8 @@
 
   width: 100%;
   height: auto;
+
+  &:first-of-type {
+    height: 100vh;
+  }
 }
