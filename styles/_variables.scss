@@ -4,26 +4,28 @@
 $font-encode: 'Encode Sans SC', sans-serif;
 $font-poppins: 'Poppins', sans-serif;
 
-$c-primary: #ed3b3b;
-$c-secondary: #7af967;
+$primary-c: #ed3b3b;
+$secondary-c: #7af967;
 
-$c-blue-light: #31ceed;
-$c-yellow: #ffec05;
-$c-red: #f9000f;
+$blue-light-c: #31ceed;
+$green-c: #16a700;
+$yellow-c: #ffec05;
+$red-c: #f9000f;
 
-$c-black: hsl(0, 0%, 0%);
-$c-grey-52: hsl(0, 0%, 52%);
-$c-grey-34: hsl(0, 0%, 34%);
-$c-grey-24: hsl(0, 0%, 24%);
-$c-grey-15: hsl(0, 0%, 15%);
-$c-grey-12: hsl(0, 0%, 12%);
-$c-grey-9: hsl(0, 0%, 9%);
-$c-grey-light-transparent: hsla(0, 0%, 29%, 0.722);
-$c-grey-light-transparent-more: hsla(0, 0%, 29%, 0.322);
-$c-grey-light-transparent-hover: hsla(0, 0%, 50%, 0.322);
-$c-white: hsl(0, 0%, 100%);
-$c-white-80: hsl(0, 0%, 80%);
-$c-white-transparent: hsla(0, 0%, 100%, 0.267);
+$black-c: hsl(0, 0%, 0%);
+$grey-52-c: hsl(0, 0%, 52%);
+$grey-34-c: hsl(0, 0%, 34%);
+$grey-24-c: hsl(0, 0%, 24%);
+$grey-19-c: hsl(0, 0%, 19%);
+$grey-15-c: hsl(0, 0%, 15%);
+$grey-12-c: hsl(0, 0%, 12%);
+$grey-9-c: hsl(0, 0%, 9%);
+$grey-light-transparent-c: hsla(0, 0%, 29%, 0.722);
+$grey-light-transparent-more-c: hsla(0, 0%, 29%, 0.322);
+$grey-light-transparent-hover-c: hsla(0, 0%, 50%, 0.322);
+$white-c: hsl(0, 0%, 100%);
+$white-80-c: hsl(0, 0%, 80%);
+$white-transparent-c: hsla(0, 0%, 100%, 0.267);
 
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
@@ -31,47 +33,50 @@ $items: 3;
 
 :root {
   //colors
-  --primary-c: #{$c-primary};
-  --secondary-c: #{$c-secondary};
-  --select-c: #{$c-primary};
-  --white-c: #{$c-white};
-  --black-c: #{$c-black};
-  --red-c: #{$c-red};
+  --primary-c: #{$primary-c};
+  --secondary-c: #{$secondary-c};
+  --select-c: #{$primary-c};
+  --white-c: #{$white-c};
+  --black-c: #{$black-c};
+  --red-c: #{$red-c};
 
-  --tags-c: #{$c-grey-34};
+  --tags-c: #{$grey-34-c};
 
-  --sub-title-text-c: #{$c-grey-52};
+  --sub-title-text-c: #{$grey-52-c};
 
-  --nav-background-c: #{$c-grey-9};
-  --nav-background-transparent-c: #{$c-grey-light-transparent};
-  --nav-text-c: #{$c-grey-52};
-  --nav-border-c: #{$c-grey-light-transparent-more};
-  --nav-mobile-menu-c: #{$c-white};
-  --nav-mobile-menu-bg: #{$c-grey-light-transparent-more};
-  --nav-mobile-menu-bg-hover: #{$c-grey-light-transparent-hover};
-  --nav-mobile-menu-btn-hover: #{$c-grey-34};
+  --nav-background-c: #{$grey-9-c};
+  --nav-background-transparent-c: #{$grey-light-transparent-c};
+  --nav-text-c: #{$grey-52-c};
+  --nav-border-c: #{$grey-light-transparent-more-c};
+  --nav-mobile-menu-c: #{$white-c};
+  --nav-mobile-menu-bg: #{$grey-light-transparent-more-c};
+  --nav-mobile-menu-bg-hover: #{$grey-light-transparent-hover-c};
+  --nav-mobile-menu-btn-hover: #{$grey-34-c};
 
-  --logo-text-c: #{$c-white};
-  --logo-front-c: #{$c-primary};
-  --logo-back-c: #{$c-secondary};
+  --logo-text-c: #{$white-c};
+  --logo-front-c: #{$primary-c};
+  --logo-back-c: #{$secondary-c};
 
-  --home-background-c: #{$c-grey-12};
-  --home-text-c: #{$c-white};
+  --home-background-c: #{$grey-12-c};
+  --home-text-c: #{$white-c};
 
-  --form-background-c: #{$c-grey-15};
-  --form-text-c: #{$c-white-80};
+  --form-background-c: #{$grey-15-c};
+  --form-text-c: #{$white-80-c};
 
-  --label-background-c: #{$c-secondary};
-  --label-background-warning-c: #{$c-primary};
+  --label-background-c: #{$secondary-c};
+  --label-background-warning-c: #{$primary-c};
 
-  --base-line-c: #{$c-grey-34};
-  --front-end-line-c: #{$c-blue-light};
-  --back-end-line-c: #{$c-yellow};
-  --react-line-c: #{$c-red};
+  --base-line-c: #{$grey-34-c};
+  --front-end-line-c: #{$blue-light-c};
+  --back-end-line-c: #{$yellow-c};
+  --react-line-c: #{$red-c};
+  --next-line-c: #{$green-c};
 
-  --text-background-c: #{$c-grey-24};
+  --skill-desc-background-c: #{$grey-19-c};
 
-  --box-shadow-img: #{$c-white-transparent};
+  --text-background-c: #{$grey-24-c}; //neviem kde
+
+  --box-shadow-img: #{$white-transparent-c};
 
   //grid
   --width-nav: 13rem;

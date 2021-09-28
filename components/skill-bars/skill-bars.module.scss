@@ -1,0 +1,64 @@
+.bars {
+  width: 50%;
+  font-size: 1.8rem;
+  padding-right: 5rem;
+}
+.bar {
+  margin-bottom: 4rem;
+
+  &:not(:first-of-type) {
+    margin-top: 4rem;
+  }
+
+  &__name {
+  }
+
+  &__empty {
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 2px;
+    background-color: var(--base-line-c);
+  }
+
+  &__fill {
+    height: 2px;
+    &--react {
+      background-color: var(--react-line-c);
+    }
+    &--next {
+      background-color: var(--next-line-c);
+    }
+    &--frontend {
+      background-color: var(--front-end-line-c);
+    }
+    &--backend {
+      background-color: var(--back-end-line-c);
+    }
+  }
+}
+
+.desc__content {
+  width: 48%;
+  padding: 2rem;
+  background-color: var(--skill-desc-background-c);
+  font-size: 1.5rem;
+
+  .title {
+    margin-bottom: 0.5rem;
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+
+  .desc {
+    margin-top: 0.5rem;
+  }
+
+  p::before,
+  h2::before,
+  p::after,
+  h2::after {
+    content: unset;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Text from '../../components/ui/text';
+import SkillBars from '../../components/skill-bars/skill-bars';
 import Section from '../../components/ui/section/section';
 import TextArea from '../../components/ui/text-area/text-area';
 import SecondTitle from '../../components/titles/second-title';
@@ -8,7 +9,7 @@ import Button from '../../components/ui/button/button';
 
 function MySkillsPage() {
   return (
-    <Section>
+    <Section styles="grid-screen">
       <TextArea>
         <header>
           <SecondTitle title="Znalosti & Skúsenosti" />
@@ -32,6 +33,7 @@ function MySkillsPage() {
           Pre viac informácií ma <Button link="/contact">contaktujte</Button>
         </Text>
       </TextArea>
+      <SkillBars />
     </Section>
   );
 }
