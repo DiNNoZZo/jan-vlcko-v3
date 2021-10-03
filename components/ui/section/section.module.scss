@@ -8,10 +8,10 @@
   justify-content: center;
 
   width: 100%;
-  height: auto;
+  min-height: 100vh;
 
   &:first-of-type {
-    height: 100vh;
+    // height: 100vh;
   }
 
   &--flex__row {
@@ -19,6 +19,6 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 100vh;
+    // height: 100vh;
   }
 }

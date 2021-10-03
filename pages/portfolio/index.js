@@ -10,7 +10,7 @@ import Button from '../../components/ui/button/button';
 function PortfolioPage() {
   return (
     <Section styles={{ paddingLeft: '0', paddingRight: '0' }}>
-      <Portfolio />
+      <Portfolio modal={true} />
     </Section>
   );
 }

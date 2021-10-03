@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React from 'react';
 
 import MainMenu from './main-menu/main-menu';
 import classes from './layout.module.scss';

@@ -14,15 +14,19 @@ const DUMMY_DATA = [
     language: ['React.js', 'Next.js', 'JavaScript', 'SCSS'],
     src: '/img/Jan-Vlcko.jpg',
     alt: 'Ján Vlčko',
+    url: '/',
+    gitUrl: 'https://github.com/DiNNoZZo/jan-vlcko-v3',
   },
   {
     id: 'i2',
     name: 'basic-validation',
     description:
-      'Táto stránka je test jednoduchej validácií inputu, len za pomoci cistého JavaScriptu a pár if checks',
+      'Táto stránka je test jednoduchej validácií inputu, len za pomoci cistého JavaScriptu a pár if checks. Plus môžete mazať užívateľov klikom na nich.',
     language: ['HTML', 'JavaScript', 'SCSS'],
     src: '/img/Basic-validation.jpg',
     alt: 'Ján Vlčko validation page',
+    url: 'https://jv-basic-validation.netlify.app/',
+    gitUrl: 'https://github.com/DiNNoZZo/basic-validation',
   },
   {
     id: 'i3',
@@ -32,6 +36,8 @@ const DUMMY_DATA = [
     language: ['HTML', 'JavaScript', 'OOP', 'SCSS'],
     src: '/img/Calculator.jpg',
     alt: 'Ján Vlčko calculator',
+    url: 'https://jv-calc.netlify.app/',
+    gitUrl: 'https://github.com/DiNNoZZo/calculator',
   },
   {
     id: 'i4',
@@ -41,6 +47,8 @@ const DUMMY_DATA = [
     language: ['JavaScript'],
     src: '/img/Pi(g)ck-game.jpg',
     alt: 'Ján Vlčko Pi(g)ck game',
+    url: 'http://jv-roll-dice.netlify.app/',
+    gitUrl: 'https://github.com/DiNNoZZo/RollDiceGame',
   },
   {
     id: 'i5',
@@ -50,18 +58,21 @@ const DUMMY_DATA = [
     language: ['React.js', 'Next.js', 'JavaScript', 'SCSS'],
     src: '/img/cat-5.jpg',
     alt: 'Ján Vlčko Do the Work',
+    url: 'http://nic-zatial',
   },
 ];
 
-function Portfolio() {
+function Portfolio(props) {
   const [data, setData] = useState(DUMMY_DATA);
   const [pageData, setPageData] = useState(null);
+  const [modal, setModal] = useState(props.modal);
 
   const getId = (e) => {
     return e.target.id;
   };
 
   const buildPage = (e) => {
+    if (!modal) return;
     const id = getId(e);
     const projectData = data.filter((project) => project.id === id);
     setPageData(...projectData);

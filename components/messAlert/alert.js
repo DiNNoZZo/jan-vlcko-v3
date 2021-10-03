@@ -11,7 +11,7 @@ function Alert(props) {
     return () => {
       clearTimeout(timeOut);
     };
-  });
+  }, []);
 
   const hideAlert = () => {
     setShowAlert(false);

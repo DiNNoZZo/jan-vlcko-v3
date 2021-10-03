@@ -16,7 +16,7 @@ import classes from './home-overview.module.scss';
 function HomeOverview() {
   return (
     <Fragment>
-      <Section styles="full-screen">
+      <Section styles={{ height: '100vh' }}>
         <TextArea styles={classes['title--area']}>
           <MainTitle />
           <p className={classes.title__desc}>

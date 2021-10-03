@@ -26,11 +26,25 @@ function PortfolioModal(props) {
             padding: '4rem',
             width: '100%',
             color: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
           <SecondTitle title={props.item.name} />
           <Text>{props.item.description}</Text>
           <strong>{props.item.language.join(' | ')}</strong>
+          <div className={classes.modal__buttons}>
+            <Button
+              href={props.item.url}
+              type="button"
+              blank={props.item.name === 'Jan-Vlcko' ? false : true}
+            >
+              {props.item.name}
+            </Button>
+            <Button href={props.item.gitUrl} blank={true}>
+              Git repository
+            </Button>
+          </div>
         </TextArea>
       </div>
     </aside>
