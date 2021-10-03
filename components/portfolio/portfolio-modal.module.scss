@@ -1,0 +1,30 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 3px;
+  width: 70%;
+  background-color: var(--white-c);
+
+  p::after,
+  h2::after,
+  p::before,
+  h2::before {
+    content: unset;
+  }
+
+  &__background {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.267);
+    z-index: 333;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

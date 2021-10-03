@@ -39,7 +39,7 @@ function HomeOverview() {
         </TextArea>
       </Section>
       <Portfolio />
-      <Section styles="grid-screen">
+      <Section flexRow={true}>
         <TextArea>
           <header>
             <SecondTitle title={'S čím pracujem'} />
@@ -64,7 +64,7 @@ function HomeOverview() {
         </TextArea>
         <ProgLang />
       </Section>
-      <Section styles="grid-screen">
+      <Section flexRow={true}>
         <ContactPage />
       </Section>
     </Fragment>

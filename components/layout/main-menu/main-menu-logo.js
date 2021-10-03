@@ -6,7 +6,7 @@ import classes from './main-menu-logo.module.scss';
 function HeaderLogo() {
   return (
     <div className={classes.header__logo}>
-      <Link href="/" passHref>
+      <Link href={'/'} passHref>
         <div className={classes.logo__area}>
           <div className={classes.logo}>
             <JLogo />

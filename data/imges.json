@@ -1,0 +1,63 @@
+[
+  {
+    "id": "i1",
+    "name": "Jan-Vlcko",
+    "description": "Moja osobná stránka. Budem tu prezentovať svoj rast, porjekty a všetky moje nápady. Stránku som vytvosil v Reacte za pomoci Next.js. Jedná sa o prezenčnú stránku predovšetkým môjho IT života",
+    "language": [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "SCSS"
+    ],
+    "src": "/img/cat-1.jpg",
+    "alt": "Ján Vlčko"
+  },
+  {
+    "id": "i2",
+    "name": "basic-validation",
+    "description": "Táto stránka je test jednoduchej validácií inputu, len za pomoci cistého JavaScriptu a pár if checks",
+    "language": [
+      "HTML",
+      "JavaScript",
+      "SCSS"
+    ],
+    "src": "/img/cat-2.jpg",
+    "alt": "Ján Vlčko validation page"
+  },
+  {
+    "id": "i3",
+    "name": "simple calculator",
+    "description": "Na tejto stránke najdeme jednoduchú kalkulačku. Napíšal som ju s pravidlami OOP v JavaScripte.",
+    "language": [
+      "HTML",
+      "JavaScript",
+      "OOP",
+      "SCSS"
+    ],
+    "src": "/img/cat-3.jpg",
+    "alt": "Ján Vlčko calculator"
+  },
+  {
+    "id": "i4",
+    "name": "Pi(g)ck Game",
+    "description": "Hra v ktorej som nevymyslel dizajn a ani logiku hry, ale napísal som ju podla autorovej flowchart. Hádžete kockou a akumulujete si hody ale ak hodíte 1 prídete o všetky nahrané body. Svoje naakumulované body si možte kedykoľvek uložiť do trvalého zisku. Hráč ktorý prvý nazbiera 100+ bodov v trvalom zisku vyhral.",
+    "language": [
+      "JavaScript"
+    ],
+    "src": "/img/cat-4.jpg",
+    "alt": "Ján Vlčko Pi(g)ck game"
+  },
+  {
+    "id": "i4",
+    "name": "Do the Work",
+    "description": "Hra v ktorej som nevymyslel dizajn a ani logiku hry, ale napísal som ju podla autorovej flowchart. Hádžete kockou a akumulujete si hody ale ak hodíte 1 prídete o všetky nahrané body. Svoje naakumulované body si možte kedykoľvek uložiť do trvalého zisku. Hráč ktorý prvý nazbiera 100+ bodov v trvalom zisku vyhral.",
+    "language": [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "SCSS"
+    ],
+    "src": "/img/cat-5.jpg",
+    "alt": "Ján Vlčko Do the Work"
+  }
+]

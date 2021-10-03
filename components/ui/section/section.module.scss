@@ -13,4 +13,12 @@
   &:first-of-type {
     height: 100vh;
   }
+
+  &--flex__row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+  }
 }

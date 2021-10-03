@@ -32,6 +32,7 @@ body {
   box-sizing: border-box;
   font-family: $font-encode;
   font-size: 1.6rem;
+  background-color: var(--home-background-c);
 }
 
 .main {
@@ -46,20 +47,17 @@ body {
   height: 100vh !important;
 }
 
-.grid-screen {
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-
-  height: 100vh !important;
-}
-
 .small-width {
   width: 40%;
 }
 
 strong {
   color: var(--secondary-c);
+}
+
+#modal-window {
+  position: relative;
+  width: 100%;
 }
 
 ////////////////////////////////
@@ -137,6 +135,13 @@ form:last-of-type::after {
 
 ///////////////////////////
 // Alert
+#alerts {
+  position: fixed;
+  width: 20%;
+  bottom: 1%;
+  right: 1%;
+  z-index: 9999;
+}
 
 .alert {
   color: var(--white-c);
@@ -152,14 +157,6 @@ form:last-of-type::after {
   p::before,
   p::after {
     content: unset;
-  }
-
-  &__container {
-    position: fixed;
-    width: 20%;
-    bottom: 1%;
-    right: 1%;
-    z-index: 9999;
   }
 
   &--error {

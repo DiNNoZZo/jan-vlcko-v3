@@ -5,9 +5,10 @@ import classes from './section.module.scss';
 function Section(props) {
   return (
     <section
+      style={{ ...props.styles }}
       className={`${
-        props.styles
-          ? `${props.styles} ${classes.section}`
+        props.flexRow
+          ? `${classes.section} ${classes['section--flex__row']}`
           : `${classes.section}`
       }`}
     >

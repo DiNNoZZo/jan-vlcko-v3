@@ -9,7 +9,7 @@ import Button from '../../components/ui/button/button';
 
 function MySkillsPage() {
   return (
-    <Section styles="grid-screen">
+    <Section flexRow={true}>
       <TextArea>
         <header>
           <SecondTitle title="Znalosti & Skúsenosti" />

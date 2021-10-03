@@ -9,9 +9,7 @@ function MainMenu() {
   return (
     <menu className={classes.main__menu}>
       <MainMenuLogo />
-
       <MainMenuNav />
-
       <MainMenuFooter />
     </menu>
   );
