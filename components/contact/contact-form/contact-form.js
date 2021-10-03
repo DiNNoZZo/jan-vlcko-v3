@@ -28,7 +28,6 @@ function ContactForm(props) {
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
-      console.log(values);
     },
   });
 

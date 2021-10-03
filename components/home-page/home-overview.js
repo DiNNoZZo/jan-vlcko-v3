@@ -25,7 +25,7 @@ function HomeOverview() {
           <Button href={'/contact'}>Napíš mi!</Button>
         </TextArea>
       </Section>
-      <Section>
+      <Section styles={{ minHeight: 'auto' }}>
         <TextArea>
           <header>
             <SecondTitle title={'Moje Portfólio'}></SecondTitle>

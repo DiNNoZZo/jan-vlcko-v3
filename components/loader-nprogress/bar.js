@@ -3,7 +3,6 @@ import React from 'react';
 import classes from './loader.module.scss';
 
 const Bar = ({ animationDuration, progress }) => {
-  console.log('bar');
   return (
     <div className={classes.bar__bg}>
       <div

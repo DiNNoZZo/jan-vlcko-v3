@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
   });
 
   useEffect(() => {
-    console.log(+1);
     const handleStart = () => {
       setState((prevState) => ({
         ...prevState,
@@ -32,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           isRouteChanging: false,
         }));
       } catch (err) {
-        console.log('error');
+        console.error('error');
         console.error(error);
       }
     };

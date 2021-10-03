@@ -15,7 +15,6 @@ function Alert(props) {
 
   const hideAlert = () => {
     setShowAlert(false);
-    console.log('set false');
   };
 
   return (
