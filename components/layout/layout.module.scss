@@ -1,7 +1,13 @@
+@import '../../styles/breakpoints';
+
 .page__content {
   display: grid;
   grid-template-columns: var(--width-nav) 1fr;
   grid-template-rows: 1fr;
+
+  @media only screen and #{$tabLand} {
+    display: block;
+  }
 }
 
 .main__content {

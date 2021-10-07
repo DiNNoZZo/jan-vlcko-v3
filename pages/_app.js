@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
 
-import Progress from '../components/loader-nprogress/progress';
-import LoadingContext from '../store/context';
-
 import Layout from '../components/layout/layout';
+import { MenuContextProvider } from '../store/menu-context';
+import Progress from '../components/loader-nprogress/progress';
+
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
@@ -48,13 +48,15 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <Layout>
-      <Progress
-        isRouteChanging={state.isRouteChanging}
-        key={state.loadingKey}
-      />
-      <Component {...pageProps} />
-    </Layout>
+    <MenuContextProvider>
+      <Layout>
+        <Progress
+          isRouteChanging={state.isRouteChanging}
+          key={state.loadingKey}
+        />
+        <Component {...pageProps} />
+      </Layout>
+    </MenuContextProvider>
   );
 }
 

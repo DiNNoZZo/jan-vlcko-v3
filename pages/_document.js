@@ -13,6 +13,7 @@ class MyCocument extends Document {
         <body>
           <div id="alerts" className="alert__container"></div>
           <div id="modal-window"></div>
+          <div id="nav-btn"></div>
           <Main />
           <NextScript />
         </body>

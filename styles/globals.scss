@@ -1,4 +1,5 @@
 @import './variables';
+@import './breakpoints';
 // Resets
 *,
 *::after,
@@ -26,6 +27,19 @@ html {
   //font size 100% = 16px
   // 1rem = 10px
   font-size: 62.5%;
+
+  @media only screen and #{$phoneLess} {
+    font-size: 40%;
+  }
+  @media only screen and #{$phone} {
+    font-size: 41.5%;
+  }
+  @media only screen and #{$tabPort} {
+    font-size: 52.5%;
+  }
+  @media only screen and #{$tabLand} {
+    font-size: 57%;
+  }
 }
 
 body {

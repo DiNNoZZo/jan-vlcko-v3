@@ -2,6 +2,10 @@
   background-color: var(--black-c);
   width: 100%;
   height: 22rem;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .header__desc {
