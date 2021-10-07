@@ -16,7 +16,7 @@ import classes from './home-overview.module.scss';
 function HomeOverview() {
   return (
     <Fragment>
-      <Section styles={{ height: '100vh' }}>
+      <Section styles={{ height: '100vh', display: 'flex' }}>
         <TextArea styles={classes['title--area']}>
           <MainTitle />
           <p className={classes.title__desc}>
@@ -26,7 +26,7 @@ function HomeOverview() {
         </TextArea>
       </Section>
       <Section styles={{ minHeight: 'auto' }}>
-        <TextArea>
+        <TextArea style={{ width: '100%' }}>
           <header>
             <SecondTitle title={'Moje Portfólio'}></SecondTitle>
           </header>

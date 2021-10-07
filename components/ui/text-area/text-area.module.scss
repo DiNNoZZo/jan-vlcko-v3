@@ -1,4 +1,14 @@
+@import '../../../styles/mixins';
+
 .text__area {
   padding-left: 5rem;
   width: 40%;
+
+  @include respond(w-1000) {
+    padding-left: 2rem;
+  }
+
+  @include respond(w-800) {
+    width: 100%;
+  }
 }

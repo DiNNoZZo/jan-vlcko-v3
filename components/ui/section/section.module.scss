@@ -1,3 +1,5 @@
+@import '../../../styles/mixins';
+
 .section {
   position: relative;
 
@@ -10,10 +12,6 @@
   width: 100%;
   min-height: 100vh;
 
-  &:first-of-type {
-    // height: 100vh;
-  }
-
   &--flex__row {
     flex-direction: row;
     align-items: center;
@@ -21,4 +19,12 @@
 
     // height: 100vh;
   }
+
+  @include respond(w-800) {
+    display: block;
+  }
+}
+
+#section-home {
+  display: flex;
 }

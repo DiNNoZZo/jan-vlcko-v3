@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .prog__lang {
   width: 50%;
   position: absolute;
@@ -17,5 +19,11 @@
       margin: auto;
       width: 100%;
     }
+  }
+
+  @include respond(w-800) {
+    display: block;
+    position: static;
+    width: 100%;
   }
 }

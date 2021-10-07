@@ -1,5 +1,5 @@
 @import './variables';
-@import './breakpoints';
+@import './mixins';
 // Resets
 *,
 *::after,
@@ -28,17 +28,20 @@ html {
   // 1rem = 10px
   font-size: 62.5%;
 
-  @media only screen and #{$phoneLess} {
+  @include respond(w-1200) {
+    font-size: 56%;
+  }
+  @include respond(w-1000) {
+    font-size: 51%;
+  }
+  @include respond(w-800) {
+    font-size: 48%;
+  }
+  @include respond(w-600) {
+    font-size: 46%;
+  }
+  @include respond(w-400) {
     font-size: 40%;
-  }
-  @media only screen and #{$phone} {
-    font-size: 41.5%;
-  }
-  @media only screen and #{$tabPort} {
-    font-size: 52.5%;
-  }
-  @media only screen and #{$tabLand} {
-    font-size: 57%;
   }
 }
 
