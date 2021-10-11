@@ -8,7 +8,7 @@ class MyCocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="sk-SK">
         <Head />
         <body>
           <div id="alerts" className="alert__container"></div>

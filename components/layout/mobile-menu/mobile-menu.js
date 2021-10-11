@@ -18,8 +18,6 @@ function MobileMenu(props) {
 
   const closeMenu = () => {
     menuCtx.setIsCheckedHandler(false);
-    console.log('change');
-    console.log(menuCtx.isChecked);
   };
 
   useEffect(() => {

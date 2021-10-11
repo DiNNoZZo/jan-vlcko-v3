@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import Text from '../../components/ui/text';
 import Section from '../../components/ui/section/section';
@@ -10,6 +11,9 @@ import Button from '../../components/ui/button/button';
 function PortfolioPage() {
   return (
     <Section styles={{ paddingLeft: '0', paddingRight: '0' }}>
+      <Head>
+        <title>Ján Vlčko | Portfólio</title>
+      </Head>
       <Portfolio modal={true} />
     </Section>
   );

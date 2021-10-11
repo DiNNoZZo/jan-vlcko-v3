@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 import Text from '../../components/ui/text';
 import SkillBars from '../../components/skill-bars/skill-bars';
@@ -10,6 +11,9 @@ import Button from '../../components/ui/button/button';
 function MySkillsPage() {
   return (
     <Section flexRow={true}>
+      <Head>
+        <title>Ján Vlčko | Skúsenosti</title>
+      </Head>
       <TextArea>
         <header>
           <SecondTitle title="Znalosti & Skúsenosti" />

@@ -10,7 +10,6 @@ function ToggleButton() {
 
   const eventCheckHandler = (e) => {
     menuCtx.setIsCheckedHandler(e.target.checked);
-    console.log(e.target.checked);
   };
 
   return (

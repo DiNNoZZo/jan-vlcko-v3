@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import Head from 'next/head';
+
 import Text from '../../components/ui/text';
 import Section from '../../components/ui/section/section';
 import TextArea from '../../components/ui/text-area/text-area';
@@ -9,6 +11,9 @@ import ProgLang from '../../components/prog-lang/prog-lang';
 function AboutPage() {
   return (
     <Section>
+      <Head>
+        <title>Ján Vlčko | O mne</title>
+      </Head>
       <TextArea>
         <header>
           <SecondTitle title="Ja, O mne, Ja o sebe" />
