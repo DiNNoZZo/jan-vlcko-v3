@@ -1,16 +1,25 @@
+@import '../../styles/mixins';
+
 .bars {
   width: 50%;
   font-size: 1.8rem;
   padding-right: 5rem;
+
+  @include respond(w-800) {
+    width: 100%;
+    padding: 4rem 0 0 2rem;
+  }
+
+  @include respond(w-600) {
+    padding: 4rem 0 0 0;
+  }
 }
+
 .bar {
   margin-bottom: 4rem;
 
   &:not(:first-of-type) {
     margin-top: 4rem;
-  }
-
-  &__name {
   }
 
   &__empty {
@@ -42,6 +51,10 @@
   padding: 2rem;
   background-color: var(--skill-desc-background-c);
   font-size: 1.5rem;
+
+  @include respond(w-800) {
+    width: 100%;
+  }
 
   .title {
     margin-bottom: 0.5rem;

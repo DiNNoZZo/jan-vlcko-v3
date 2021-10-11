@@ -32,16 +32,16 @@ html {
     font-size: 56%;
   }
   @include respond(w-1000) {
-    font-size: 51%;
+    font-size: 53%;
   }
   @include respond(w-800) {
-    font-size: 48%;
+    font-size: 50%;
   }
   @include respond(w-600) {
-    font-size: 43%;
+    font-size: 45%;
   }
   @include respond(w-400) {
-    font-size: 38%;
+    font-size: 40%;
   }
 }
 
