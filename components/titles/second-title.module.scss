@@ -7,10 +7,10 @@
   color: var(--secondary-c);
 
   @include respond(w-600) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   @include respond(w-400) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
