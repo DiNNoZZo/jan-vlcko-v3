@@ -20,7 +20,15 @@
   color: var(--logo-front-c);
   transform: translateX(-5.5rem);
 
+  @include respond(w-800) {
+    transform: translateX(-5rem);
+  }
+
   @include respond(w-600) {
     transform: translateX(-4rem);
+  }
+
+  @include respond(w-400) {
+    transform: translateX(-3rem);
   }
 }

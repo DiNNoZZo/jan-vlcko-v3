@@ -1,6 +1,16 @@
+@import '../../styles/mixins';
+
 .second__title {
   position: relative;
   font-size: 6rem;
   margin-bottom: 3.5rem;
   color: var(--secondary-c);
+
+  @include respond(w-600) {
+    font-size: 5rem;
+  }
+
+  @include respond(w-400) {
+    font-size: 4rem;
+  }
 }
