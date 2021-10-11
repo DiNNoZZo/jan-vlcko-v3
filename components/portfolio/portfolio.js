@@ -58,7 +58,8 @@ const DUMMY_DATA = [
     language: ['React.js', 'Next.js', 'JavaScript', 'SCSS'],
     src: '/img/cat-5.jpg',
     alt: 'Ján Vlčko Do the Work',
-    url: 'http://nic-zatial',
+    url: 'http://',
+    gitUrl: 'https://',
   },
 ];
 

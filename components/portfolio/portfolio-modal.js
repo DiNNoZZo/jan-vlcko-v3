@@ -39,10 +39,10 @@ function PortfolioModal(props) {
               type="button"
               blank={props.item.name === 'Jan-Vlcko' ? false : true}
             >
-              {props.item.name}
+              Preview
             </Button>
             <Button href={props.item.gitUrl} blank={true}>
-              Git repository
+              Git repo
             </Button>
           </div>
         </TextArea>
