@@ -6,6 +6,10 @@
     font-size: 8.5rem;
     line-height: 0.9;
     margin-bottom: 3.5rem;
+
+    @include respond(w-600) {
+      font-size: 6.3rem;
+    }
   }
 
   &-j {
@@ -13,5 +17,9 @@
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 11rem;
+
+    @include respond(w-600) {
+      font-size: 8rem;
+    }
   }
 }

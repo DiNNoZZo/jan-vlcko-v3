@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .logo--front {
   position: absolute;
   transform: translateX(6px);
@@ -17,4 +19,8 @@
   position: absolute;
   color: var(--logo-front-c);
   transform: translateX(-5.5rem);
+
+  @include respond(w-600) {
+    transform: translateX(-4rem);
+  }
 }
