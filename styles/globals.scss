@@ -38,10 +38,10 @@ html {
     font-size: 50%;
   }
   @include respond(w-600) {
-    font-size: 45%;
+    font-size: 48%;
   }
   @include respond(w-400) {
-    font-size: 40%;
+    font-size: 45%;
   }
 }
 
