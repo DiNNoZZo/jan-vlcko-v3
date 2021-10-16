@@ -1,8 +1,14 @@
+@import '../../styles/mixins';
+
 .title__desc {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   color: var(--sub-title-text-c);
   margin-bottom: 5rem;
+
+  @include respond(w-400) {
+    font-size: 1.7rem;
+  }
 }
 
 .title--area {

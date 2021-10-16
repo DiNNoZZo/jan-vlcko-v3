@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useUpdate } from 'react-use';
 
-export default function useMounted() {
+function useMounted() {
   const mounted = useRef(false);
   const update = useUpdate();
   useEffect(() => {
@@ -12,3 +12,5 @@ export default function useMounted() {
   }, [update]);
   return mounted.current;
 }
+
+export default useMounted;

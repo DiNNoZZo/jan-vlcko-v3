@@ -26,6 +26,10 @@
       height: 100rem;
     }
 
+    @include respond(w-600) {
+      height: 55rem;
+    }
+
     // height: 100%;
     // width: 100%;
   }

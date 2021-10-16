@@ -16,7 +16,7 @@ function MySkillsPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Znalosti & Skúsenosti" />
+          <SecondTitle title="Znalosti&nbsp;&&nbsp;Skúsenosti" />
         </header>
         <Text>
           Ako samouk sa učím programovať už 2 roky za ktoré som sa stihol
@@ -24,9 +24,10 @@ function MySkillsPage() {
           aj na JavaScript, ktorý ma baví dodnes a je to môj smer.
         </Text>
         <Text>
-          Aktuálne sa venujem čistej forme JS pretože sa mi s ňou dobre pracuje,
-          rád si programujem veci sám čiže sa snažím vyhýbať zbytočným
-          knižniciam. Ďalej sa chcem doučiť React.
+          Aktívne sa venuj zdokonaleniu v{' '}
+          <strong>Materail-UI a TypeScripte</strong>. Nasledujúci projkt bude v
+          Reacte s Materail-UI a Next.js. Bude to web aplikácia pre značenie
+          denních aj časovo dlhších úloh.
         </Text>
         <Text>
           Veľmi ma zaujíma aj Back-end, dokážem naprogramovať jednoduché

@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import ContactPage from '../contact/contact-page';
 
@@ -14,6 +15,12 @@ import ProgLang from '../prog-lang/prog-lang';
 import classes from './home-overview.module.scss';
 
 function HomeOverview() {
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, [pathname]);
+
   return (
     <Fragment>
       <Section styles={{ height: '100vh', display: 'flex' }}>
@@ -28,7 +35,7 @@ function HomeOverview() {
       <Section styles={{ minHeight: 'auto' }}>
         <TextArea style={{ width: '100%' }}>
           <header>
-            <SecondTitle title={'Moje Portfólio'}></SecondTitle>
+            <SecondTitle title="Moje&nbsp;Portfólio"></SecondTitle>
           </header>
           <Text>
             Ukážka zopár projektov na ktorých som pracoval zo skvelími ľuďmi.{' '}
@@ -42,7 +49,7 @@ function HomeOverview() {
       <Section flexRow={true}>
         <TextArea>
           <header>
-            <SecondTitle title={'S čím pracujem'} />
+            <SecondTitle title="S&nbsp;čím&nbsp;pracujem" />
           </header>
           <Text>
             Primárne sa sústreďujem na front-end. <strong>HTML</strong>,{' '}
@@ -53,9 +60,10 @@ function HomeOverview() {
             Neoddelitelnou súčasťou je aj znalosť <strong>GitHub-u</strong>.
           </Text>
           <Text>
-            Ďalej sa chcem učit a zbierať skúsenosti podľa aktuálnej ponuky a
-            projektu. Nemám problém si ďalej{' '}
-            <strong>rozširovať svoje znalosti</strong>.
+            Aktívne sa venuj zdokonaleniu v{' '}
+            <strong>Materail-UI a TypeScripte</strong>. Nasledujúci projkt bude
+            v Reacte s Materail-UI a Next.js. Bude to web aplikácia pre značenie
+            denních aj časovo dlhších úloh.
           </Text>
           <Text>
             Prehľad mojich skúseností v aktuálnych{' '}

@@ -16,16 +16,16 @@ function AboutPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Ja, O mne, Ja o sebe" />
+          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe" />
         </header>
         <Text>
           Ahoj! Som Front-end developer a žijem na Slovensku. Mojim cielom je
           tvoriť krásne stránky pre klientov s intuitívnym UI rozhraním a
-          všeliakými efektami či animáciami.
+          všeliakými efektmi či animáciami.
         </Text>
         <Text>
           Mám veľký zmysel pre detail, dávam do práce vždy maximum, rád sa učím
-          nové veci a veci lepšie robiť. Kritiku neberiem osobne, zoberiem si z
+          nové veci a veci robiť lepšími. Kritiku neberiem osobne, zoberiem si z
           toho to čo mi pomôže.
         </Text>
         <Text>

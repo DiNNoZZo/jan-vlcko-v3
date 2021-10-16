@@ -50,9 +50,9 @@
   width: 48%;
   padding: 2rem;
   background-color: var(--skill-desc-background-c);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
-  @include respond(w-800) {
+  @include respond(w-1000) {
     width: 100%;
   }
 
@@ -61,7 +61,7 @@
   }
 
   .year {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .desc {

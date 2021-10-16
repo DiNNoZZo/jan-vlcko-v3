@@ -12,7 +12,7 @@ function ContactPage(props) {
     <Fragment>
       <TextArea styles={classes['area--contact']}>
         <header>
-          <SecondTitle title="Kontaktuj ma" />
+          <SecondTitle title="Kontaktuj&nbsp;ma" />
         </header>
         <Text>
           Mám záujem o stredné a väčšie výzvy. Pre ďalšie otázky ma neváhajte

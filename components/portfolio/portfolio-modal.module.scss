@@ -17,6 +17,11 @@
     content: unset;
   }
 
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
   &__background {
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.267);

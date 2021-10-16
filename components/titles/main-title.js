@@ -1,40 +1,49 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState, useRef } from 'react';
 
 import JLogo from '../j-logo/j-logo';
+import AnimationTitle from './hover-anim-title';
+import useOnScreen from '../../hooks/use-first-anim';
+
 import classes from './main-title.module.scss';
+import animation from './animation-title.module.scss';
 
 function MainTitle() {
+  const [anim, setAnim] = useState(`${animation.blast}`);
+  const [ref] = useOnScreen({ root: null, threshold: 0.2 });
+
   return (
     <Fragment>
-      <h1 className={`title blast-anim ${classes['title--primary']}`}>
-        <span className="blast">A</span>
-        <span className="blast">h</span>
-        <span className="blast">o</span>
-        <span className="blast">j</span>
-        <span className="blast">,</span>
+      <h1 ref={ref} className={`title blast-anim ${classes['title--primary']}`}>
+        <AnimationTitle className={anim}>A</AnimationTitle>
+        <AnimationTitle className={anim}>h</AnimationTitle>
+        <AnimationTitle className={anim}>o</AnimationTitle>
+        <AnimationTitle className={anim}>j</AnimationTitle>
+        <AnimationTitle className={anim}>,</AnimationTitle>
         <br />
-        <span className="blast">s</span>
-        <span className="blast">o</span>
-        <span className="blast">m </span>
+        <AnimationTitle className={anim}>s</AnimationTitle>
+        <AnimationTitle className={anim}>o</AnimationTitle>
+        <AnimationTitle className={anim}>m</AnimationTitle>
+        &nbsp;
         <div className={`${classes['title-j']}`}>
           <JLogo title={true} />
         </div>
-        <span className="blast">á</span>
-        <span className="blast">n</span>
-        <span className="blast">,</span>
+        <AnimationTitle className={anim}>á</AnimationTitle>
+        <AnimationTitle className={anim}>n</AnimationTitle>
+        <AnimationTitle className={anim}>,</AnimationTitle>
         <br />
-        <span className="blast">W</span>
-        <span className="blast">e</span>
-        <span className="blast">b </span>
-        <span className="blast">D</span>
-        <span className="blast">e</span>
-        <span className="blast">v</span>
-        <span className="blast">e</span>
-        <span className="blast">l</span>
-        <span className="blast">o</span>
-        <span className="blast">p</span>
-        <span className="blast">e</span>
-        <span className="blast">r</span>
+        <AnimationTitle className={anim}>W</AnimationTitle>
+        <AnimationTitle className={anim}>e</AnimationTitle>
+        <AnimationTitle className={anim}>b</AnimationTitle>
+        &nbsp;
+        <AnimationTitle className={anim}>D</AnimationTitle>
+        <AnimationTitle className={anim}>e</AnimationTitle>
+        <AnimationTitle className={anim}>v</AnimationTitle>
+        <AnimationTitle className={anim}>e</AnimationTitle>
+        <AnimationTitle className={anim}>l</AnimationTitle>
+        <AnimationTitle className={anim}>o</AnimationTitle>
+        <AnimationTitle className={anim}>p</AnimationTitle>
+        <AnimationTitle className={anim}>e</AnimationTitle>
+        <AnimationTitle className={anim}>r</AnimationTitle>
       </h1>
     </Fragment>
   );

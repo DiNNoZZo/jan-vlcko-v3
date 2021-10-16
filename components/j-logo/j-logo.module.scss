@@ -18,7 +18,7 @@
 .title--front {
   position: absolute;
   color: var(--logo-front-c);
-  transform: translateX(-5.5rem);
+  transform: translateX(-5rem);
 
   @include respond(w-800) {
     transform: translateX(-5rem);

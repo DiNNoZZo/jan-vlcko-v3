@@ -30,7 +30,7 @@ function PortfolioModal(props) {
             flexDirection: 'column',
           }}
         >
-          <SecondTitle title={props.item.name} />
+          <h3 className={classes.modal__title}>{props.item.name}</h3>
           <Text>{props.item.description}</Text>
           <strong>{props.item.language.join(' | ')}</strong>
           <div className={classes.modal__buttons}>

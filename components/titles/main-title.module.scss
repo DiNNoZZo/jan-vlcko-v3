@@ -6,6 +6,7 @@
     font-size: 8.5rem;
     line-height: 0.9;
     margin-bottom: 3.5rem;
+    white-space: nowrap;
 
     @include respond(w-800) {
       font-size: 8rem;
@@ -21,13 +22,17 @@
   }
 
   &-j {
-    display: inline;
+    display: inline-block;
+    opacity: 0;
     position: relative;
     font-family: 'Poppins', sans-serif;
-    font-size: 11rem;
+    font-size: 10rem;
+    transform: translateX(3px);
+    transition: opacity 0.3s linear;
 
     @include respond(w-800) {
       font-size: 9.8rem;
+      transform: translateX(3px);
     }
 
     @include respond(w-600) {
@@ -36,6 +41,7 @@
 
     @include respond(w-400) {
       font-size: 6rem;
+      transform: translateX(1px);
     }
   }
 }
