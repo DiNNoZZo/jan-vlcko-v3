@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tanem/react-nprogress": "^3.0.79",
+    "aos": "^3.0.0-beta.6",
     "dotenv": "^10.0.0",
     "formik": "^2.2.9",
     "next": "11.1.2",

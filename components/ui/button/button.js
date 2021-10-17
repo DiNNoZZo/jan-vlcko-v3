@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import 'aos/dist/aos.css';
 
 import classes from './button.module.scss';
 
 function Button(props) {
+  const dataAos = props['data-aos'] ? props['data-aos'] : null;
+
   if (props.link) {
     return (
       <Link href={props.link}>
@@ -15,7 +18,11 @@ function Button(props) {
   if (props.href) {
     return (
       <Link href={props.href}>
-        <a target={props.blank ? '_blank' : null} className={classes.btn}>
+        <a
+          data-aos={dataAos}
+          target={props.blank ? '_blank' : null}
+          className={classes.btn}
+        >
           {props.children}
         </a>
       </Link>

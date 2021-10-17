@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import ContactPage from '../contact/contact-page';
 
@@ -18,6 +20,7 @@ function HomeOverview() {
   const { pathname } = useRouter();
 
   useEffect(() => {
+    Aos.init({ duration: 1000 });
     window.history.scrollRestoration = 'manual';
   }, [pathname]);
 
@@ -26,10 +29,12 @@ function HomeOverview() {
       <Section styles={{ height: '100vh', display: 'flex' }}>
         <TextArea styles={classes['title--area']}>
           <MainTitle />
-          <p className={classes.title__desc}>
+          <p data-aos="fade-right" className={classes.title__desc}>
             Front End Developer / React / Next
           </p>
-          <Button href={'/contact'}>Napíš mi!</Button>
+          <Button data-aos="fade-right" href={'/contact'}>
+            Napíš mi!
+          </Button>
         </TextArea>
       </Section>
       <Section styles={{ minHeight: 'auto' }}>
