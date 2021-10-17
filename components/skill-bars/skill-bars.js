@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
+import AnimationContext from '../../store/animation-context';
 import classes from './skill-bars.module.scss';
 
 const data = [
@@ -27,9 +27,9 @@ const data = [
 
 function SkillBars(props) {
   const [bars, setBars] = useState(data);
-
+  const animCtx = useContext(AnimationContext);
   return (
-    <div className={classes.bars}>
+    <div data-aos={animCtx.fadeLeft} className={classes.bars}>
       {bars.map((bar) => {
         return (
           <div key={bar.id} className={classes.bar}>
@@ -45,7 +45,7 @@ function SkillBars(props) {
           </div>
         );
       })}
-      <div className={classes.desc__content}>
+      <div data-aos={animCtx.fadeUp} className={classes.desc__content}>
         <h2 className={classes.title}>Front-end</h2>
         <p>Začiatok</p>
         <span className={classes.year}>2020-NEVER END</span>

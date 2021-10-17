@@ -1,11 +1,12 @@
-import { useEffect, useState, useRef } from 'react';
-
+import { useEffect, useState, useRef, useContext } from 'react';
+import AnimationContext from '../store/animation-context';
 import animation from '../components/titles/animation-title.module.scss';
 ////////////////////////////////
 // Open animation for the Titles
 
 function useOnScreen(options) {
-  const [delay, setDelay] = useState(1000);
+  const animCtx = useContext(AnimationContext);
+  const [delay, setDelay] = useState(animCtx.firstLoadDelay);
   const ref = useRef();
 
   useEffect(() => {
@@ -19,7 +20,7 @@ function useOnScreen(options) {
         timerAdd = window.setTimeout(() => {
           element.classList.add(animation['first-load']);
           element.style.opacity = 1;
-
+          console.log(delay);
           timerRemove = window.setTimeout(() => {
             element.classList.remove(animation['first-load']);
           }, delay + i * 50);
@@ -29,7 +30,7 @@ function useOnScreen(options) {
       observer.unobserve(entry.target);
     }, options);
 
-    if (ref.current) {
+    if (ref.current.firstChild.style.opacity == 0) {
       observer.observe(ref.current);
     }
 
@@ -37,7 +38,7 @@ function useOnScreen(options) {
       window.clearTimeout(timerAdd);
       window.clearTimeout(timerRemove);
     };
-  }, [ref, options, delay]);
+  }, [ref, options]);
 
   return [ref];
 }

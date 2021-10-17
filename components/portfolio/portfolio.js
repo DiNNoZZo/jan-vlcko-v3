@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import PortfolioModal from './portfolio-modal';
 
 import classes from './portfolio.module.scss';
+import 'aos/dist/aos.css';
 
 const DUMMY_DATA = [
   {
@@ -68,6 +69,8 @@ function Portfolio(props) {
   const [pageData, setPageData] = useState(null);
   const [modal, setModal] = useState(props.modal);
 
+  const dataAos = props['data-aos'] ? props['data-aos'] : null;
+
   const getId = (e) => {
     return e.target.id;
   };
@@ -89,7 +92,7 @@ function Portfolio(props) {
 
   return (
     <Fragment>
-      <ul className={classes.portfolio}>
+      <ul data-aos={dataAos} className={classes.portfolio}>
         {data.map((item) => {
           return (
             <li

@@ -23,6 +23,39 @@ body {
   background-color: var(--primary-c);
 }
 
+.load-page-enter {
+}
+.load-page-enter-active {
+  animation: showLoadPage 0.3s linear forwards;
+  animation-delay: 0.5s;
+}
+.load-page-exit {
+}
+.load-page-exit-active {
+  animation: hideLoadPage 0.3s linear forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes showLoadPage {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideLoadPage {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 ////////////////////////////////
 // Global sett
 html {

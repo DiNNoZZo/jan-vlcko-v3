@@ -27,9 +27,13 @@
   }
 
   @include respond(w-600) {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 3px;
     padding: 1rem 2rem;
+  }
+
+  @include respond(w-400) {
+    font-size: 1.4rem;
   }
 
   &:hover {

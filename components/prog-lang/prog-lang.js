@@ -3,8 +3,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import classes from './prog-lang.module.scss';
+import 'aos/dist/aos.css';
 
-function ProgLang() {
+function ProgLang(props) {
+  const dataAos = props['data-aos'] ? props['data-aos'] : null;
   useEffect(() => {
     try {
       TagCanvas.textColour = getComputedStyle(document.body).getPropertyValue(
@@ -32,7 +34,7 @@ function ProgLang() {
         <script defer src="/js/tagcanvas.min.js"></script>
       </Head>
       <div id="myCanvasContainer">
-        <canvas id="myCanvas" width="500" height="500">
+        <canvas data-aos={dataAos} id="myCanvas" width="500" height="500">
           <ul>
             <li>
               <Link

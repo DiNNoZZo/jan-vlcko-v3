@@ -17,7 +17,8 @@ const validationSchema = Yup.object({
   message: Yup.string().required('Sprava je potreban'),
 });
 
-function ContactForm() {
+function ContactForm(props) {
+  const dataAos = props['data-aos'] ? props['data-aos'] : null;
   return (
     <Formik
       initialValues={{
@@ -51,7 +52,10 @@ function ContactForm() {
       {({ errors, touched }) => (
         <Form>
           <ul className={classes.form}>
-            <li className={`${classes['form-item']} ${classes['form--name']}`}>
+            <li
+              data-aos={dataAos}
+              className={`${classes['form-item']} ${classes['form--name']}`}
+            >
               <Field
                 className={classes.input}
                 type="text"
@@ -67,7 +71,10 @@ function ContactForm() {
                 htmlFor="name"
               ></label>
             </li>
-            <li className={`${classes['form-item']} ${classes['form--email']}`}>
+            <li
+              data-aos={dataAos}
+              className={`${classes['form-item']} ${classes['form--email']}`}
+            >
               <Field
                 className={classes.input}
                 type="email"
@@ -85,6 +92,7 @@ function ContactForm() {
               ></label>
             </li>
             <li
+              data-aos={dataAos}
               className={`${classes['form-item']} ${classes['form--subject']}`}
             >
               <Field
@@ -102,7 +110,10 @@ function ContactForm() {
                 htmlFor="subject"
               ></label>
             </li>
-            <li className={`${classes['form-item']} ${classes['form--mess']}`}>
+            <li
+              data-aos={dataAos}
+              className={`${classes['form-item']} ${classes['form--mess']}`}
+            >
               <Field
                 as="textarea"
                 className={`${classes.input} ${classes['input--area']}`}
@@ -122,7 +133,10 @@ function ContactForm() {
                 htmlFor="message"
               ></label>
             </li>
-            <li className={`${classes['form-item']} ${classes['form--btn']}`}>
+            <li
+              data-aos={dataAos}
+              className={`${classes['form-item']} ${classes['form--btn']}`}
+            >
               <Button
                 className={`${classes.btn} ${classes['btn--contact']}`}
                 name="submit"

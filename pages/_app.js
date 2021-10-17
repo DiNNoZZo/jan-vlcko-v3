@@ -1,15 +1,17 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
-
+import { CSSTransition } from 'react-transition-group';
+import AnimationContext from '../store/animation-context';
 import Layout from '../components/layout/layout';
 import { MenuContextProvider } from '../store/menu-context';
-import { ErrorContextProvider } from '../store/error-context';
+import { AOSContextProvider } from '../store/animation-context';
 import Progress from '../components/loader-nprogress/progress';
 
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const animCtx = useContext(AnimationContext);
 
   const [state, setState] = useState({
     isRouteChanging: false,
@@ -50,15 +52,23 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <MenuContextProvider>
-      <ErrorContextProvider>
+      <AOSContextProvider>
         <Layout>
-          <Progress
-            isRouteChanging={state.isRouteChanging}
-            key={state.loadingKey}
-          />
+          <CSSTransition
+            mountOnEnter
+            unmountOnExit
+            in={state.isRouteChanging}
+            timeout={animCtx.loadPageDelay}
+            classNames="load-page"
+          >
+            <Progress
+              isRouteChanging={state.isRouteChanging}
+              key={state.loadingKey}
+            />
+          </CSSTransition>
           <Component {...pageProps} />
         </Layout>
-      </ErrorContextProvider>
+      </AOSContextProvider>
     </MenuContextProvider>
   );
 }

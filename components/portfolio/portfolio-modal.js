@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
-
+import React, { useContext } from 'react';
+import AnimationContext from '../../store/animation-context';
 import Text from '../../components/ui/text';
 import SkillBars from '../../components/skill-bars/skill-bars';
 import Section from '../../components/ui/section/section';
@@ -11,9 +11,10 @@ import Button from '../../components/ui/button/button';
 import classes from './portfolio-modal.module.scss';
 
 function PortfolioModal(props) {
+  const animCtx = useContext(AnimationContext);
   return (
     <aside className={classes.modal__background} onClick={props.onClose}>
-      <div className={classes.modal}>
+      <div data-aos={animCtx.zoomInDown} className={classes.modal}>
         <img
           className={classes.modal__img}
           id={props.item.id}

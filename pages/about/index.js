@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
+import AnimationContext from '../../store/animation-context';
 
 import Text from '../../components/ui/text';
 import Section from '../../components/ui/section/section';
@@ -9,6 +10,8 @@ import Button from '../../components/ui/button/button';
 import ProgLang from '../../components/prog-lang/prog-lang';
 
 function AboutPage() {
+  const AnimCtx = useContext(AnimationContext);
+
   return (
     <Section>
       <Head>
@@ -16,30 +19,28 @@ function AboutPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe">
-            Ja, O mne, <br /> Ja o sebe
-          </SecondTitle>
+          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe" />
         </header>
-        <Text>
+        <Text data-aos={AnimCtx.fadeRight}>
           Ahoj! Som Front-end developer a žijem na Slovensku. Mojim cielom je
           tvoriť krásne stránky pre klientov s intuitívnym UI rozhraním a
           všeliakými efektmi či animáciami.
         </Text>
-        <Text>
+        <Text data-aos={AnimCtx.fadeRight}>
           Mám veľký zmysel pre detail, dávam do práce vždy maximum, rád sa učím
           nové veci a veci robiť lepšími. Kritiku neberiem osobne, zoberiem si z
           toho to čo mi pomôže.
         </Text>
-        <Text>
+        <Text data-aos={AnimCtx.fadeRight}>
           Moje záľuby sú pracovať na sebe a svojich cieloch, pre oddych si
           zájdem do kina na dobrý film, alebo sadnem na bicykel a prejdem sa po
           horách.
         </Text>
-        <Text>
+        <Text data-aos={AnimCtx.fadeRight}>
           <Button link="/contact">Poďme spraviť niečo špeciálne</Button>
         </Text>
       </TextArea>
-      <ProgLang />
+      <ProgLang data-aos={AnimCtx.fadeLeft} />
     </Section>
   );
 }

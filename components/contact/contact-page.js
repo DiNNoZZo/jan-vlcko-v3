@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+import AnimationContext from '../../store/animation-context';
+
 import TextArea from '../ui/text-area/text-area';
 import Text from '../ui/text';
 import SecondTitle from '../titles/second-title';
@@ -7,20 +9,22 @@ import MapBox from '../map-box/map-box';
 
 import classes from './contact-page.module.scss';
 
-function ContactPage(props) {
+function ContactPage() {
+  const AnimCtx = useContext(AnimationContext);
+
   return (
     <Fragment>
       <TextArea styles={classes['area--contact']}>
         <header>
           <SecondTitle title="Kontaktuj&nbsp;ma" />
         </header>
-        <Text>
+        <Text data-aos={AnimCtx.fadeRight}>
           Mám záujem o stredné a väčšie výzvy. Pre ďalšie otázky ma neváhajte
           kontaktovať cez formulár.
         </Text>
-        <ContactForm />
+        <ContactForm data-aos={AnimCtx.fadeUp} />
       </TextArea>
-      <MapBox />
+      <MapBox data-aos={AnimCtx.fadeLeft} />
     </Fragment>
   );
 }

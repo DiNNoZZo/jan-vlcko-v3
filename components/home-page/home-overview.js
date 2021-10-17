@@ -1,10 +1,9 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+
+import AnimationContext from '../../store/animation-context';
 
 import ContactPage from '../contact/contact-page';
-
 import Text from '../ui/text';
 import Section from '../ui/section/section';
 import TextArea from '../ui/text-area/text-area';
@@ -18,9 +17,9 @@ import classes from './home-overview.module.scss';
 
 function HomeOverview() {
   const { pathname } = useRouter();
+  const AnimCtx = useContext(AnimationContext);
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
     window.history.scrollRestoration = 'manual';
   }, [pathname]);
 
@@ -29,12 +28,12 @@ function HomeOverview() {
       <Section styles={{ height: '100vh', display: 'flex' }}>
         <TextArea styles={classes['title--area']}>
           <MainTitle />
-          <p data-aos="fade-right" className={classes.title__desc}>
+          <p data-aos={AnimCtx.fadeUp} className={classes.title__desc}>
             Front End Developer / React / Next
           </p>
-          <Button data-aos="fade-right" href={'/contact'}>
-            Napíš mi!
-          </Button>
+          <div data-aos={AnimCtx.fadeUp}>
+            <Button href={'/contact'}>Napíš mi!</Button>
+          </div>
         </TextArea>
       </Section>
       <Section styles={{ minHeight: 'auto' }}>
@@ -42,21 +41,23 @@ function HomeOverview() {
           <header>
             <SecondTitle title="Moje&nbsp;Portfólio"></SecondTitle>
           </header>
-          <Text>
+          <Text data-aos={AnimCtx.fadeRight}>
             Ukážka zopár projektov na ktorých som pracoval zo skvelími ľuďmi.{' '}
             <br /> Pre ďalšie projekty vám stačí prejsť na moju{' '}
             <Button link={'/portfolio'}>work page.</Button>{' '}
           </Text>
-          <Button href={'/portfolio'}>Pozri viac!</Button>
+          <div data-aos={AnimCtx.fadeRight}>
+            <Button href={'/portfolio'}>Pozri viac!</Button>
+          </div>
         </TextArea>
       </Section>
-      <Portfolio />
+      <Portfolio data-aos={AnimCtx.fadeUp} />
       <Section flexRow={true}>
         <TextArea>
           <header>
             <SecondTitle title="S&nbsp;čím&nbsp;pracujem" />
           </header>
-          <Text>
+          <Text data-aos={AnimCtx.fadeRight}>
             Primárne sa sústreďujem na front-end. <strong>HTML</strong>,{' '}
             <strong>CSS/CSS3</strong>, <strong>JavaScript</strong>. Moje priame
             sústredenie získal framework <strong>React</strong>, ktorý ma
@@ -64,18 +65,18 @@ function HomeOverview() {
             medzi Vue a Angularom. Okrajovo som skúšal aj prácu s nimi.
             Neoddelitelnou súčasťou je aj znalosť <strong>GitHub-u</strong>.
           </Text>
-          <Text>
+          <Text data-aos={AnimCtx.fadeRight}>
             Aktívne sa venuj zdokonaleniu v{' '}
             <strong>Materail-UI a TypeScripte</strong>. Nasledujúci projkt bude
             v Reacte s Materail-UI a Next.js. Bude to web aplikácia pre značenie
             denních aj časovo dlhších úloh.
           </Text>
-          <Text>
+          <Text data-aos={AnimCtx.fadeRight}>
             Prehľad mojich skúseností v aktuálnych{' '}
             <Button link="/skills">web technológiách</Button>.
           </Text>
         </TextArea>
-        <ProgLang />
+        <ProgLang data-aos={AnimCtx.fadeLeft} />
       </Section>
       <Section flexRow={true}>
         <ContactPage />

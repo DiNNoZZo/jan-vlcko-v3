@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import AnimationTitle from './hover-anim-title';
 import useOnScreen from '../../hooks/use-first-anim';
