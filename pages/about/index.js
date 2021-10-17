@@ -16,7 +16,9 @@ function AboutPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe" />
+          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe">
+            Ja, O mne, <br /> Ja o sebe
+          </SecondTitle>
         </header>
         <Text>
           Ahoj! Som Front-end developer a žijem na Slovensku. Mojim cielom je

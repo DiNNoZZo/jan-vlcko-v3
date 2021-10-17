@@ -1,30 +1,31 @@
-import React, { useState, useEffect, useRef, Fragment } from 'react';
+import React, { useState, useEffect, useContext, Fragment } from 'react';
+
+import ErrorContext from '../../store/error-context';
+
 import ReactDOM from 'react-dom';
 import AlertMessage from './alert-mess';
 
-function Alert(props) {
-  const [showAlert, setShowAlert] = useState(false);
+function Alert({ time, type, children }) {
+  const errorCtx = useContext(ErrorContext);
+  const [showAlert, setShowAlert] = useState(errorCtx.showAlert);
 
   useEffect(() => {
-    setShowAlert(true);
-    const timeOut = window.setTimeout(hideAlert, +props.time * 1000);
+    errorCtx.showAlertMess(true);
+    const timeOut = window.setTimeout(() => {
+      errorCtx.showAlertMess(false);
+    }, +time * 1000);
+
     return () => {
       clearTimeout(timeOut);
     };
-  }, []);
-
-  const hideAlert = () => {
-    setShowAlert(false);
-  };
+  }, [time, errorCtx]);
 
   return (
     <Fragment>
       {ReactDOM.createPortal(
         <Fragment>
-          {showAlert && (
-            <AlertMessage type={props.type} showAlert={showAlert}>
-              {props.children}
-            </AlertMessage>
+          {errorCtx.showAlert && (
+            <AlertMessage type={type}>{children}</AlertMessage>
           )}
         </Fragment>,
         document.getElementById('alerts')

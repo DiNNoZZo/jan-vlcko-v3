@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 import Layout from '../components/layout/layout';
 import { MenuContextProvider } from '../store/menu-context';
+import { ErrorContextProvider } from '../store/error-context';
 import Progress from '../components/loader-nprogress/progress';
 
 import '../styles/globals.scss';
@@ -49,13 +50,15 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <MenuContextProvider>
-      <Layout>
-        <Progress
-          isRouteChanging={state.isRouteChanging}
-          key={state.loadingKey}
-        />
-        <Component {...pageProps} />
-      </Layout>
+      <ErrorContextProvider>
+        <Layout>
+          <Progress
+            isRouteChanging={state.isRouteChanging}
+            key={state.loadingKey}
+          />
+          <Component {...pageProps} />
+        </Layout>
+      </ErrorContextProvider>
     </MenuContextProvider>
   );
 }

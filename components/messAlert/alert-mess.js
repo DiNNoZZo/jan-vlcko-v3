@@ -1,6 +1,7 @@
 import React, { useState, useRef, useImperativeHandle } from 'react';
 
 const AlertMessage = React.forwardRef((props, ref) => {
+  console.log(props.type);
   return (
     <div className={`${'alert'} ${`alert--${props.type}`}`}>
       <p>{props.children}</p>
