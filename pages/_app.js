@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
 import { CSSTransition } from 'react-transition-group';
-import AnimationContext from '../store/animation-context';
-import Layout from '../components/layout/layout';
 import { MenuContextProvider } from '../store/menu-context';
 import { AOSContextProvider } from '../store/animation-context';
+import AnimationContext from '../store/animation-context';
+import Layout from '../components/layout/layout';
 import Progress from '../components/loader-nprogress/progress';
 
 import '../styles/globals.scss';

@@ -1,6 +1,7 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-class MyCocument extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -11,7 +12,6 @@ class MyCocument extends Document {
       <Html lang="sk-SK">
         <Head />
         <body>
-          <div id="alerts" className="alert__container"></div>
           <div id="modal-window"></div>
           <div id="nav-btn"></div>
           <Main />
@@ -22,4 +22,4 @@ class MyCocument extends Document {
   }
 }
 
-export default MyCocument;
+export default MyDocument;

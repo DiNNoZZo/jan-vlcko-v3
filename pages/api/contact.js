@@ -1,7 +1,17 @@
-require('dotenv').config();
 const nodemailer = require('nodemailer');
 
-export default (req, res) => {
+const transporter = nodemailer.createTransport({
+  service: 'Gmail', // true for 465, false for other ports
+  auth: {
+    user: process.env.GOOGLE_USER, // generated ethereal user
+    pass: process.env.GOOGLE_PASS, // generated ethereal password
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
+
+async function sendMail(req, res) {
   const { name, email, subject, message } = JSON.parse(req.body);
 
   const emailOutput = `
@@ -12,17 +22,6 @@ export default (req, res) => {
   správa:<br />
     ${message}.
   `;
-
-  let transporter = nodemailer.createTransport({
-    service: 'Gmail', // true for 465, false for other ports
-    auth: {
-      user: process.env.GOOGLE_USER, // generated ethereal user
-      pass: process.env.GOOGLE_PASS, // generated ethereal password
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
 
   let mailOptions = {
     from: {
@@ -44,4 +43,6 @@ export default (req, res) => {
       status: 'success',
     });
   });
-};
+}
+
+export default sendMail;
