@@ -25,7 +25,7 @@ const data = [
   },
 ];
 
-function SkillBars(props) {
+function SkillBars() {
   const [bars, setBars] = useState(data);
   const animCtx = useContext(AnimationContext);
   return (

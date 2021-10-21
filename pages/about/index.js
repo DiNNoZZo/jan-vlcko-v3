@@ -16,6 +16,7 @@ function AboutPage() {
     <Section>
       <Head>
         <title>Ján Vlčko | O mne</title>
+        <meta name="description" content="Niečo málo o mne a mojich cieloch." />
       </Head>
       <TextArea>
         <header>

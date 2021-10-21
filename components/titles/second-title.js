@@ -11,7 +11,7 @@ function SecondTitle({ title }) {
   const [currTitle, setCurrTitle] = useState(title.split(''));
 
   return (
-    <h2 ref={ref} className={classes.second__title}>
+    <h2 ref={ref} className={`${animation.title} ${classes.second__title}`}>
       {currTitle.map((letter, i) => (
         <AnimationTitle key={i} className={animation.blast}>
           {letter}

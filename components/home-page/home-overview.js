@@ -26,7 +26,7 @@ function HomeOverview() {
   return (
     <Fragment>
       <Section styles={{ height: '100vh', display: 'flex' }}>
-        <TextArea styles={classes['title--area']}>
+        <TextArea otherClasses={classes['title--area']}>
           <MainTitle />
           <p data-aos={AnimCtx.fadeUp} className={classes.title__desc}>
             Front End Developer / React / Next

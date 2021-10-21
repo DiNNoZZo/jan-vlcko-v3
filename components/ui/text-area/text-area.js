@@ -2,17 +2,17 @@ import React from 'react';
 
 import classes from './text-area.module.scss';
 
-function TextArea(props) {
+function TextArea({ style, otherClasses, children }) {
   return (
     <div
-      style={{ ...props.style }}
+      style={{ ...style }}
       className={`${
-        props.styles
-          ? `${props.styles} ${classes.text__area}`
+        otherClasses
+          ? `${otherClasses} ${classes.text__area}`
           : `${classes.text__area}`
       }`}
     >
-      {props.children}
+      {children}
     </div>
   );
 }

@@ -1,14 +1,15 @@
 @import '../../styles/mixins';
 
 .modal {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   margin: 2rem auto;
   padding: 1rem;
   border-radius: 3px;
   width: 70%;
   background-color: var(--white-c);
+  position: relative;
 
   p::after,
   h2::after,
@@ -24,6 +25,7 @@
 
   &__background {
     min-height: 100vh;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.267);
     z-index: 333;
     position: absolute;
@@ -31,8 +33,16 @@
     left: 0;
   }
 
+  &__img__area {
+    position: relative;
+    display: block;
+    width: auto;
+    // height: 10rem;
+  }
+
   &__img {
     width: 100%;
+    height: 100%;
   }
 
   &__buttons {

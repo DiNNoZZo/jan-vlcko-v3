@@ -40,10 +40,13 @@ $items: 3;
   --black-c: #{$black-c};
   --red-c: #{$red-c};
 
+  //tags colors
   --tags-c: #{$grey-34-c};
 
+  //subtitles colors
   --sub-title-text-c: #{$grey-52-c};
 
+  //menu colors
   --nav-background-c: #{$grey-9-c};
   --nav-background-transparent-c: #{$grey-light-transparent-c};
   --nav-text-c: #{$grey-52-c};
@@ -53,19 +56,23 @@ $items: 3;
   --nav-mobile-menu-bg-hover: #{$grey-light-transparent-hover-c};
   --nav-mobile-menu-btn-hover: #{$grey-34-c};
 
+  //logo colors
   --logo-text-c: #{$white-c};
   --logo-front-c: #{$primary-c};
   --logo-back-c: #{$secondary-c};
 
-  --home-background-c: #{$grey-12-c};
-  --home-text-c: #{$white-c};
+  //
+  --pages-background-c: #{$grey-12-c};
+  --pages-text-c: #{$white-c};
 
+  //form colors
   --form-background-c: #{$grey-15-c};
   --form-text-c: #{$white-80-c};
-
+  --form-placeholder-c: #{$grey-52-c};
   --label-background-c: #{$secondary-c};
   --label-background-warning-c: #{$primary-c};
 
+  //skills colors
   --base-line-c: #{$grey-34-c};
   --front-end-line-c: #{$blue-light-c};
   --back-end-line-c: #{$yellow-c};
@@ -73,10 +80,7 @@ $items: 3;
   --next-line-c: #{$green-c};
 
   --progress-bar-base-c: #{$grey-9-c};
-
   --skill-desc-background-c: #{$grey-19-c};
-
-  --text-background-c: #{$grey-24-c}; //neviem kde
 
   --box-shadow-img: #{$white-transparent-c};
 

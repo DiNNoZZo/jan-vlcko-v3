@@ -15,6 +15,10 @@ function PortfolioPage() {
     <Section styles={{ paddingLeft: '0', paddingRight: '0', display: 'flex' }}>
       <Head>
         <title>Ján Vlčko | Portfólio</title>
+        <meta
+          name="description"
+          content="Galéria mojich hotových projektov s odkazmi na Github"
+        />
       </Head>
       <Portfolio data-aos={animCtx.fadeUp} modal={true} />
     </Section>

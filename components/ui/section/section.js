@@ -2,17 +2,17 @@ import React from 'react';
 
 import classes from './section.module.scss';
 
-function Section(props) {
+function Section({ styles, flexRow, children }) {
   return (
     <section
-      style={{ ...props.styles }}
+      style={{ ...styles }}
       className={`${
-        props.flexRow
+        flexRow
           ? `${classes.section} ${classes['section--flex__row']}`
           : `${classes.section}`
       }`}
     >
-      {props.children}
+      {children}
     </section>
   );
 }

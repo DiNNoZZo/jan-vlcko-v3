@@ -1,16 +1,12 @@
 .loading {
   height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   z-index: 500;
-  background-color: var(--home-background-c);
+  background-color: var(--pages-background-c);
 
   &__text {
     margin-bottom: 1rem;

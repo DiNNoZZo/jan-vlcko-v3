@@ -15,6 +15,10 @@ function MySkillsPage() {
     <Section flexRow={true}>
       <Head>
         <title>Ján Vlčko | Skúsenosti</title>
+        <meta
+          name="description"
+          content="Moje skúsenosti v oblasti programovania"
+        />
       </Head>
       <TextArea>
         <header>

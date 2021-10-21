@@ -1,23 +1,19 @@
 @import '../../../styles/mixins';
 
 .section {
-  position: relative;
-
-  padding: 9rem 3rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  width: 100%;
+  position: relative;
+  padding: 9rem 3rem;
   min-height: 100vh;
+  width: 100%;
 
   &--flex__row {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    // height: 100vh;
   }
 
   &:nth-of-type(4) {

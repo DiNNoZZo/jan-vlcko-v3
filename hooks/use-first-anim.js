@@ -20,7 +20,6 @@ function useOnScreen(options) {
         timerAdd = window.setTimeout(() => {
           element.classList.add(animation['first-load']);
           element.style.opacity = 1;
-          console.log(delay);
           timerRemove = window.setTimeout(() => {
             element.classList.remove(animation['first-load']);
           }, delay + i * 50);

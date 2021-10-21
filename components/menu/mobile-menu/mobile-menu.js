@@ -1,8 +1,7 @@
-import React, { useContext, useRef, useState, useEffect } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 import MenuContext from '../../../store/menu-context';
-
 import MainMenuLogo from '../main-menu/main-menu-logo';
 import MainMenuNav from '../main-menu/main-menu-nav';
 import MainMenuFooter from '../main-menu/main-menu-footer';
@@ -11,7 +10,7 @@ import useMounted from '../../../hooks/use-mounted';
 
 import classes from './mobile-menu.module.scss';
 
-function MobileMenu(props) {
+function MobileMenu() {
   const menuCtx = useContext(MenuContext);
   const mounted = useMounted();
   const menu = useRef();

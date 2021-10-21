@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="sk-SK">
+      <Html lang="sk">
         <Head />
         <body>
           <div id="modal-window"></div>

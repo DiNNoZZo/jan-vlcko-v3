@@ -7,10 +7,9 @@ function HomePage() {
   return (
     <Fragment>
       <Head>
-        <meta name="description" content="Autor: Ján VLčko, Rok: 2021." />
         <meta
           name="description"
-          content="Cielom je zviditeľnit svoje skúsenosti a ukázanie svohjo protólia pre ďalšie pracovné kontrakty."
+          content="Autor: Ján Vlčko, Rok: 2021. Cielom je zviditeľnit svoje skúsenosti a ukázanie svohjo protólia pre ďalšie pracovné kontrakty."
         />
 
         <title>Ján Vlčko | Domov</title>

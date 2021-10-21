@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, useRef } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import JLogo from '../j-logo/j-logo';
 import AnimationTitle from './hover-anim-title';
@@ -13,7 +13,10 @@ function MainTitle() {
 
   return (
     <Fragment>
-      <h1 ref={ref} className={`title blast-anim ${classes['title--primary']}`}>
+      <h1
+        ref={ref}
+        className={`${animation.title} ${classes['title--primary']}`}
+      >
         <AnimationTitle className={anim}>A</AnimationTitle>
         <AnimationTitle className={anim}>h</AnimationTitle>
         <AnimationTitle className={anim}>o</AnimationTitle>

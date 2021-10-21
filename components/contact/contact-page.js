@@ -19,8 +19,7 @@ function ContactPage() {
           <SecondTitle title="Kontaktuj&nbsp;ma" />
         </header>
         <Text data-aos={AnimCtx.fadeRight}>
-          Mám záujem o stredné a väčšie výzvy. Pre ďalšie otázky ma neváhajte
-          kontaktovať cez formulár.
+          Pre ďalšie otázky ma neváhajte kontaktovať cez formulár.
         </Text>
         <ContactForm data-aos={AnimCtx.fadeUp} />
       </TextArea>

@@ -1,4 +1,4 @@
-@import '../../../styles/breakpoints';
+@import '../../../styles/mixins';
 
 .main__menu {
   display: grid;
@@ -24,7 +24,7 @@
 }
 
 .button-toggle {
-  @media only screen and #{$tabLand} {
+  @include respond(w-1200) {
     background-color: var(--nav-mobile-menu-bg);
     border-radius: 6px;
     position: fixed;

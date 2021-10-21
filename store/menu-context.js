@@ -2,14 +2,13 @@ import React, { createContext, useState, useEffect } from 'react';
 
 const MenuContext = createContext({
   isChecked: false,
-  isActiveMenu: false,
+  isMobile: false,
   setIsCheckedHandler: () => {},
 });
 
 export function MenuContextProvider(props) {
   const [isChecked, setIsChecked] = useState(false);
   const [windowWidth, setWindowWidth] = useState(null);
-  const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   const resizeHandler = () => {
     setWindowWidth(window.innerWidth);
@@ -29,9 +28,7 @@ export function MenuContextProvider(props) {
   const isMobile = windowWidth <= 1200;
 
   return (
-    <MenuContext.Provider
-      value={{ isChecked, isActiveMenu: isMobile, setIsCheckedHandler }}
-    >
+    <MenuContext.Provider value={{ isChecked, isMobile, setIsCheckedHandler }}>
       {props.children}
     </MenuContext.Provider>
   );

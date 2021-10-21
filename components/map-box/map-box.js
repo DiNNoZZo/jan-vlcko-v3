@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import classes from './map-box.module.scss';
 import 'aos/dist/aos.css';

@@ -23,6 +23,8 @@ body {
   background-color: var(--primary-c);
 }
 
+////////////////////////////////
+// Animation load screen
 .load-page-enter {
 }
 .load-page-enter-active {
@@ -84,23 +86,12 @@ body {
   box-sizing: border-box;
   font-family: $font-encode;
   font-size: 1.6rem;
-  background-color: var(--home-background-c);
+  background-color: var(--pages-background-c);
 }
 
 .main {
-  background-color: var(--home-background-c);
-}
-
-.title {
-  transition: font-size 0.2s;
-}
-
-.full-screen {
-  height: 100vh !important;
-}
-
-.small-width {
-  width: 40%;
+  background-color: var(--pages-background-c);
+  color: var(--pages-text-c);
 }
 
 strong {
@@ -137,6 +128,13 @@ h1:first-of-type::before,
 h2:first-of-type::before {
   top: -0.5rem;
   left: -2rem;
+
+  @include respond(w-600) {
+    top: -1rem;
+  }
+  @include respond(w-400) {
+    top: -1.5rem;
+  }
 }
 
 h1:last-of-type::after,
@@ -152,6 +150,13 @@ form:first-of-type::before {
 }
 form:first-of-type::before {
   top: -1.8rem;
+
+  @include respond(w-600) {
+    top: -2.2rem;
+  }
+  @include respond(w-400) {
+    top: -2.5rem;
+  }
 }
 
 p:last-of-type::after,
@@ -195,6 +200,8 @@ form:last-of-type::after {
   z-index: 9999;
 }
 
+///////////////////////////
+// Alert sets
 .alert {
   color: var(--white-c);
   text-align: center;

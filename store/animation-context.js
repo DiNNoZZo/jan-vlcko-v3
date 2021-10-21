@@ -8,8 +8,8 @@ const AOSContext = createContext({
   fadeLeft: 'fade-left',
   fadeRight: 'fade-right',
   zoomInDown: 'zoom-in-down',
-  aosDelay: 1000,
-  firstLoadDelay: 500,
+  aosDelay: 300,
+  firstLoadDelay: 300,
   loadPageDelay: 500,
 });
 
@@ -17,28 +17,24 @@ export function AOSContextProvider({ children }) {
   const router = useRouter();
   const [aosDelay, setAosDelay] = useState(300);
   useEffect(() => {
-    AOS.refreshHard();
     AOS.init({
       throttleDelay: aosDelay,
     });
-    console.log('reset');
   }, [router.pathname]);
 
+  const providerValues = {
+    fadeUp: 'fade-up',
+    fadeDown: 'fade-down',
+    fadeLeft: 'fade-left',
+    fadeRight: 'fade-right',
+    zoomInDown: 'zoom-in-down',
+    aosDelay,
+    firstLoadDelay: 500,
+    loadPageDelay: 500,
+  };
+
   return (
-    <AOSContext.Provider
-      value={{
-        fadeUp: 'fade-up',
-        fadeDown: 'fade-down',
-        fadeLeft: 'fade-left',
-        fadeRight: 'fade-right',
-        zoomInDown: 'zoom-in-down',
-        aosDelay,
-        firstLoadDelay: 500,
-        loadPageDelay: 500,
-      }}
-    >
-      {children}
-    </AOSContext.Provider>
+    <AOSContext.Provider value={providerValues}>{children}</AOSContext.Provider>
   );
 }
 

@@ -9,6 +9,10 @@ function ContactPage() {
     <Section>
       <Head>
         <title>Ján Vlčko | Kontakt</title>
+        <meta
+          name="description"
+          content="Nezabudmi na kedikoľvek kontaktovať pracovne či osobne."
+        />
       </Head>
       <Contact />
     </Section>
