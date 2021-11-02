@@ -1,3 +1,6 @@
+## Ahoj, 
+som rád, že ťa zaujal môj kód. Na tejto stránke ešte priebežne pracujem. Základná logika je naimplementovaná. Chcem sa pohrať ešte UI/UX a pridať appke ďalšie rozšírenia ako napríklad zmazanie tasku, farebné označenie expirovaného tasku, označiť za dokončený task atd.. Stále ma tu čaká dosť práce. :)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
