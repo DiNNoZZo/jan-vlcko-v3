@@ -20,7 +20,7 @@ export function AOSContextProvider({ children }) {
     AOS.init({
       throttleDelay: aosDelay,
     });
-  }, [router.pathname]);
+  }, [router.pathname, aosDelay]);
 
   const providerValues = {
     fadeUp: 'fade-up',
@@ -29,7 +29,7 @@ export function AOSContextProvider({ children }) {
     fadeRight: 'fade-right',
     zoomInDown: 'zoom-in-down',
     aosDelay,
-    firstLoadDelay: 500,
+    firstLoadDelay: 400,
     loadPageDelay: 500,
   };
 

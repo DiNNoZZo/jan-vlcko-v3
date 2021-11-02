@@ -9,9 +9,7 @@ function ProgLang(props) {
   const dataAos = props['data-aos'] ? props['data-aos'] : null;
   useEffect(() => {
     try {
-      TagCanvas.textColour = getComputedStyle(document.body).getPropertyValue(
-        '--secondary-c'
-      );
+      TagCanvas.textColour = '#7af967';
       TagCanvas.activeCursor = 'default';
       TagCanvas.depth = 1;
       TagCanvas.maxSpeed = 0.07;

@@ -6,12 +6,16 @@ import useOnScreen from '../../hooks/use-first-anim';
 import classes from './second-title.module.scss';
 import animation from './animation-title.module.scss';
 
-function SecondTitle({ title }) {
+function SecondTitle({ title, ...otherPops }) {
   const [ref] = useOnScreen({ root: null, threshold: 0.2 });
   const [currTitle, setCurrTitle] = useState(title.split(''));
 
   return (
-    <h2 ref={ref} className={`${animation.title} ${classes.second__title}`}>
+    <h2
+      ref={ref}
+      className={`${animation.title} ${classes.second__title}`}
+      {...otherPops}
+    >
       {currTitle.map((letter, i) => (
         <AnimationTitle key={i} className={animation.blast}>
           {letter}

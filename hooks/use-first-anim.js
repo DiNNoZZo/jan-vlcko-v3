@@ -22,7 +22,7 @@ function useOnScreen(options) {
           element.style.opacity = 1;
           timerRemove = window.setTimeout(() => {
             element.classList.remove(animation['first-load']);
-          }, delay + i * 50);
+          }, delay + i * 150);
         }, delay + i * 100);
       });
 

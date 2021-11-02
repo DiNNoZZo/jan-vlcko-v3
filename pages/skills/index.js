@@ -22,7 +22,8 @@ function MySkillsPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Znalosti&nbsp;&&nbsp;Skúsenosti" />
+          <SecondTitle title="Znalosti&nbsp;" style={{ marginBottom: '0' }} />
+          <SecondTitle title="&&nbsp;Skúsenosti" />
         </header>
         <Text data-aos={animCtx.fadeRight}>
           Ako samouk sa učím programovať už 2 roky za ktoré som sa stihol

@@ -33,7 +33,7 @@ const DUMMY_DATA = [
     src: '/img/Basic-validation.jpg',
     size: {
       width: 900,
-      height: 500,
+      height: 450,
     },
     alt: 'Ján Vlčko validation page',
     url: 'https://jv-basic-validation.netlify.app/',
@@ -48,7 +48,7 @@ const DUMMY_DATA = [
     src: '/img/Calculator.jpg',
     size: {
       width: 900,
-      height: 500,
+      height: 450,
     },
     alt: 'Ján Vlčko calculator',
     url: 'https://jv-calc.netlify.app/',
@@ -63,7 +63,7 @@ const DUMMY_DATA = [
     src: '/img/Pi(g)ck-game.jpg',
     size: {
       width: 900,
-      height: 500,
+      height: 450,
     },
     alt: 'Ján Vlčko Pi(g)ck game',
     url: 'http://jv-roll-dice.netlify.app/',
@@ -71,18 +71,18 @@ const DUMMY_DATA = [
   },
   {
     id: 'i5',
-    name: 'Do the Work',
+    name: 'Tasks manager',
     description:
-      'Hra v ktorej som nevymyslel dizajn a ani logiku hry, ale napísal som ju podla autorovej flowchart. Hádžete kockou a akumulujete si hody ale ak hodíte 1 prídete o všetky nahrané body. Svoje naakumulované body si možte kedykoľvek uložiť do trvalého zisku. Hráč ktorý prvý nazbiera 100+ bodov v trvalom zisku vyhral.',
+      'Aplikácia pre značenie svojich cielov. Kratkodobé výzvy alebo aj dlhodobé ciele.',
     language: ['React.js', 'Next.js', 'TypeScript', 'Material-UI'],
-    src: '/img/cat-5.jpg',
+    src: '/img/Tasks-manager.jpg',
     size: {
-      width: 900,
-      height: 1400,
+      width: 800,
+      height: 500,
     },
-    alt: 'Ján Vlčko Do the Work',
-    url: 'http://',
-    gitUrl: 'https://',
+    alt: 'Ján Vlčko Tasks manager',
+    url: 'https://jv-tasks-manager.netlify.app/',
+    gitUrl: 'https://github.com/DiNNoZZo/Manager-tasks',
   },
 ];
 

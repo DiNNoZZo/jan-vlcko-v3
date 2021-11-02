@@ -20,7 +20,11 @@ function AboutPage() {
       </Head>
       <TextArea>
         <header>
-          <SecondTitle title="Ja,&nbsp;O&nbsp;mne,&nbsp;Ja&nbsp;o&nbsp;sebe" />
+          <SecondTitle
+            title="Ja,&nbsp;O&nbsp;mne,"
+            style={{ marginBottom: '0' }}
+          />
+          <SecondTitle title="Ja&nbsp;o&nbsp;sebe" />
         </header>
         <Text data-aos={AnimCtx.fadeRight}>
           Ahoj! Som Front-end developer a žijem na Slovensku. Mojim cielom je
