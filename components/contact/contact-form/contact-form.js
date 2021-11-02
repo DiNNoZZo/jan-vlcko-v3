@@ -38,7 +38,6 @@ function ContactForm(props) {
           body: JSON.stringify(values),
         }).then((res) => {
           if (res.status === 200) {
-            console.log('Sending complete');
             actions.resetForm({
               name: '',
               email: '',
