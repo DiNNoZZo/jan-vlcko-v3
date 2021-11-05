@@ -23,7 +23,7 @@ const Progress = ({ isRouteChanging }) => {
         <div className={classes.logo}>
           <JLogo />
         </div>
-        <p className={classes.loading__text}>Smoothy loading, just wait...</p>
+        <p className={classes.loading__text}>Loading...</p>
         <Bar animationDuration={animationDuration} progress={progress} />
       </Container>
     </LoadPage>
