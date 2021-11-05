@@ -1,3 +1,6 @@
+## Ahoj, 
+som rád, že ťa zaujal môj kód. Na mojej stránke prezentujem hlavne seba a svoje skúsenosti. Stránka je viac menej hotová, stále ešte musím doladiť detaili aby bola perfetkná. :)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
